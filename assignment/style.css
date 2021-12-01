@@ -1,11 +1,89 @@
+* {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #333333;
+}
+
 /* Give your page a fun background color */
+
+.page_container {
+    background-image: url(background.svg);
+    background-position: center center;
+    background-size: cover;
+
+    width: 100%;
+    min-height: 100vh;
+
+    display: grid;
+    grid-template-rows: max-content 1fr max-content;
+}
 
 /* Make the header and footer a different color from the background */
 
+header {
+    padding: 1rem;
+    margin: 1rem;
+    background-color: rgba(0,0,0,.1);
+    border-radius: .5rem;
+    -webkit-backdrop-filter: blur(1rem);
+    backdrop-filter: blur(1rem);
+}
+
+footer {
+    padding: 1rem;
+    margin: 1rem;
+    background-color: rgba(0,0,0,.2);
+    border-radius: .5rem;
+    -webkit-backdrop-filter: blur(1rem);
+    backdrop-filter: blur(1rem);
+}
+
 /* Align the h1 containing your name in the center of the header*/
+
+h1 {
+    font-size: 3rem;
+    text-align: center;
+}
 
 /* Make your p tag a different color and italic */
 
+.quote {
+    font-style: italic;
+    color: #ffffff;
+}
+
 /* Put a border around your image */
 
+.image {
+    width: 40vmin;
+    height: 60vmin;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    border: 1rem solid rgba(0,0,0,.1);
+    border-radius: .5rem;
+}
+
+.image img {
+    margin-left: -8rem;
+    height: 100%;
+}
+
 /* Change the font-family of your list */
+
+li {
+    font-family: monospace;
+}
+
+.page_body {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 1rem;
+}
+
+.facts * {
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
