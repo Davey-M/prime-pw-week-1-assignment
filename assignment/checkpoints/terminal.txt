@@ -13,7 +13,8 @@
     mkdir "New Folder Name"
 
 # 5 - What output would you expect when you run the command 'ls' in an empty folder? What about a folder containing files?
-    No folders will be shown.
+    If the foler contains files you will get a list of those files and their extensions.
+    If the folder does not contain files nothing will be shown.
 
 # 6 - What is a quick way to create a new file?
     touch "New File Name"
